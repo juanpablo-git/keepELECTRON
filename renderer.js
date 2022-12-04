@@ -5,3 +5,7 @@
  * `contextIsolation` is turned on. Use the contextBridge API in `preload.js`
  * to expose Node.js functionality from the main process.
  */
+const fs = require("fs")
+fs.readFile("/var/www/insert.csv",(err,row)=>{
+    console.log("leu")
+})
